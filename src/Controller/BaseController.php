@@ -18,7 +18,7 @@ class BaseController extends AbstractController
         return $this->render('base/index.html.twig', [
         ]);
     }
-    #[Route('/cafe', name: 'app_cafe')]
+    #[Route('/liste-typecafe', name: 'app_cafe')]
     public function cafe(Request $request, EntityManagerInterface $em): Response
     {
         $cafe = new TypeCafe();
